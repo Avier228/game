@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text=" камень, ножницы, бумага"  FontSize="30px" Grid.ColumnSpan="3"  Grid.Row="0" Grid.Column="0" Background="DarkSeaGreen" TextAlignment="Center"/>
+        <Button x:Name="ButtonPlay" Content="Старт" FontSize="30px" Grid.ColumnSpan="3"  Grid.Row="2" Grid.Column="0" Click="ButtonPlay_Click" Background="YellowGreen"/>
+        <Label x:Name="LabelWinner" Content="" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  FontSize="30px" LayoutUpdated="winnertext" Background="Gold"/>
+
     </Grid>
 </Window>
