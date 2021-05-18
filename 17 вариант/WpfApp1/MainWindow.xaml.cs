@@ -35,8 +35,8 @@ namespace WpfApp1
             Player2.Stone = false;
             Player2.xod = false;
             this.Visibility = Visibility.Collapsed;
-            /// Window1 Win1 = new Window1();
-            /// Win1.ShowDialog();
+            Window1 Win1 = new Window1();
+            Win1.ShowDialog();
         }
         private void Window_Closed(object sender, EventArgs e)
         {
